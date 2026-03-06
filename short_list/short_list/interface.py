@@ -79,7 +79,8 @@ tk.Button(root, text="Parcourir...", command=choisir_sortie).pack()
 
 # génère les dates qui seront affichés dans l'outils
 # todo: ajouter option pour changer de jour de distributions ?
-mardis = generer_mardis(debut=datetime.datetime(2025, 7, 14), nb_semaines=12)  # par défaut 3 mois
+# datetime.datetime(2025, 7, 14)
+mardis = generer_mardis(debut=None, nb_semaines=12)  # par défaut 3 mois
 selections = []
 
 tk.Label(root, text="Sélectionnez les dates de livraison :", font=("Arial", 12)).pack(pady=10)
