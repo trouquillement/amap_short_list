@@ -7,4 +7,7 @@ mapping_légumes = {"grand-panier-4-pers-amap": "grand-panier",
 
 mapping = {"légumes": mapping_légumes,
            "pains": None,
-           "bières": None}
+           "bières": None,
+           "champignon": None,
+           "produits_transformés": None}
+
