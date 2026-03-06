@@ -47,6 +47,23 @@ puis executer:
 
 python amap_short_list.py
 
+Les fichiers de distribution de chaque contrat sont téléchargés sur clic amap selon cette procédure:
+- gestionnaire référent
+- gestion des contrats signés
+- choisir la ferme et le contrat
+- télécharger
+- Toutes les feuilles de livraisons (excel)
+
+/!\ attention, les fichiers téléchargés sur clic amap sont au format xls !
+à ce jour, il faut d'abord changer le format en xlsx pour que ça fonctionne.
+
+Ensuite les fichiers doivent être mis dans un dossier par type de produit.
+Les dossiers pour chaque produit doivent être rassemblé dans un dossier que l'on sélectionne
+en lançant l'application.
+L'architecture est dans le dossier "fichiers_exemple".
+
+Le fichier de sortie d'exemple est aussi dans ce dossier: "short_list_demo.xlsx"
+
 ## Générer l'exécutable (.exe)
 
 Depuis l’environnement activé :
