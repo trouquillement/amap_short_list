@@ -49,8 +49,16 @@ def parse_clic_amap_file(file_path, produit):
             df_data.columns = column_names
 
             # Nettoyage : remplacer les NaN numériques par 0 et cast en int
-            for col in df_data.columns[2:]:
-                df_data[col] = df_data[col].fillna(0).astype(int)
+            # for col in df_data.columns[2:]:
+            #     df_data[col] = df_data[col].fillna(0).astype(int)
+            cols = df_data.columns[2:]
+
+            df_data[cols] = (
+                df_data[cols]
+                .apply(pd.to_numeric, errors="coerce")
+                .fillna(0)
+                .astype(int)
+            )
 
             # on mets l'index à Nom
             # df_data.index = df_data["Nom"]
